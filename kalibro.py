@@ -7,11 +7,8 @@ import base64
 from dotenv import load_dotenv
 load_dotenv() # take environment variables from .env.
 
-
-
 client = OpenAI() # Initialize the OpenAI client
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY") #Load OpenAI API key from .env
-print(OPENAI_API_KEY)
 client.api_key(OPENAI_API_KEY) # Set the API key
 User_Prompt_Text = prompts.User_Prompt_1 # Set the prompt
 System_Prompt_Text = prompts.System_Prompt # Set the system prompt 
